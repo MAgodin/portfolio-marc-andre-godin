@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 5em;
+  }
+
+  .read-the-docs {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 4em;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  nav {
+    font-size: 0.9rem;
+  }
+}
+
+.md-hidden {
+  transition: transform 0.3s ease-in-out;
+}
+
+.md-hidden.open {
+  transform: translateY(0);
+}
+
+.md-hidden.closed {
+  transform: translateY(-100%);
+}
+
+.md:hidden button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #222;
+  border: none;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.md:hidden button:hover {
+  background-color: #444;
+}
