@@ -10,7 +10,7 @@ export function Contact() {
   // Fonction pour télécharger le CV
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/CV_Marc-André_Godin.pdf";
+    link.href = "../CV_Marc-André_Godin.pdf";
     link.download = "CV_Marc-André_Godin.pdf";
     link.click();
   };
