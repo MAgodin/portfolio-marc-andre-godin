@@ -1,5 +1,6 @@
 import { Mail, Phone, Download } from "lucide-react";
 import { motion } from "framer-motion";
+import cv from "../../public/CV_Marc-André_Godin.pdf";
 
 export function Contact() {
   const fadeIn = {
@@ -10,7 +11,7 @@ export function Contact() {
   // Fonction pour télécharger le CV
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "https://magodin.github.io/portfolio-marc-andre-godin/CV_Marc-André_Godin.pdf";
+    link.href = cv;
     link.download = "CV_Marc-André_Godin.pdf";
     link.click();
   };
