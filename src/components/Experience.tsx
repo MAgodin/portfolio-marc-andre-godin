@@ -4,13 +4,13 @@ import vertMarine from "../assets/vert-marine.jpg";
 import Lacoste from "../assets/logo-lacoste.jpg";
 import Formation from "../assets/formation.jpg";
 import CESI from "../assets/CESI.png";
+import YNOV from "../assets/ynov campus.png";
 
 export function Experience() {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
-
 
   return (
     <motion.div
@@ -42,14 +42,14 @@ export function Experience() {
             <div className="flex-1">
               <div className="text-sm text-orange-500 mb-2">à partir de 2025</div>
               <h4 className="text-2xl font-semibold text-white mb-2">
-                En recherche d'une formation pour ASR ou Cybersécurité
+                En bachelor 3 Cybersécurité pour continuer en master cybersécurité à Ynov Campus
               </h4>
-              {/*<p className="text-gray-300">description</p>*/}
+              {<p className="text-gray-300">Mont-Saint-Aignant</p>}
             </div>
             {/* Image */}
             <img
-              src={Formation}
-              alt="Formation"
+              src={YNOV}
+              alt="Campus Ynov"
               className="mt-4 md:mt-0 ml-0 md:ml-8 w-32 h-32 object-cover rounded-lg"
             />
           </motion.div>
@@ -84,6 +84,25 @@ export function Experience() {
         </div>
 
         <div className="space-y-8">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="flex flex-col md:flex-row items-start border-l-4 border-orange-500 pl-6 bg-gray-800 p-6 rounded-lg shadow-lg"
+          >
+            <div className="flex-1">
+              <div className="text-sm text-orange-500 mb-2">2025 et au-delà</div>
+              <h4 className="text-2xl font-semibold text-white mb-2">
+              En recherche d'une Alternance en Ingénieur Cybersécurité
+              </h4>
+             { /*<p className="text-gray-300">Une autre formation ou un projet</p>*/}
+            </div>
+            {/* Image */}
+            <img
+              src={Formation}
+              alt="Nouvelle Formation"
+              className="mt-4 md:mt-0 ml-0 md:ml-8 w-32 h-32 object-cover rounded-lg"
+            />
+          </motion.div>
+
           {/* Alternance Développeur Informatique */}
           <motion.div
             whileHover={{ scale: 1.02 }}

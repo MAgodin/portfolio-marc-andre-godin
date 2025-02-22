@@ -1,6 +1,6 @@
 import { Mail, Phone, Download } from "lucide-react";
 import { motion } from "framer-motion";
-import cv from "../../public/CV_Marc-André_Godin.pdf";
+import cv from "../../public/CV Marc-André Godin.pdf";
 
 export function Contact() {
   const fadeIn = {
