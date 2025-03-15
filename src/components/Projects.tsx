@@ -9,11 +9,11 @@ export function Projects() {
     {
       title: "Site Web pour Stéphane Godin",
       description:
-        "Site web en développement pour Stéphane Godin, un professionnel dans le domaine de la psychologie. Ce projet est réalisé en react, tailwind CSS, et TypeScript et sera mis en ligne très bientôt.",
+        "Le site web de Stéphane Godin, un professionnel dans le domaine de la psychologie, est désormais en ligne. Ce projet a été réalisé avec React, Tailwind CSS et TypeScript.",
       image: SiteStephane,
       technologies: ["React", "Tailwind CSS", "TypeScript"],
       githubLink: "https://github.com/MAgodin/Stephane-Godin",
-      liveLink: "#",
+      liveLink: "https://stephane-godin.fr",
     },
     {
       title: "Cap'able",
@@ -35,7 +35,6 @@ export function Projects() {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
-
 
   return (
     <motion.div
